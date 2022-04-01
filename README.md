@@ -9,12 +9,10 @@
 2. general info -> copy `application ID` (`client ID`) and `public key`
 3. set webhook (inbound) url `<base url>/interactions`
 4. bot -> enable bot -> copy token
-
-## run
-
-1. create `.env` file in project root
-2. `npm install`
-3. `npm start`
+5. enable developer settings on discord client (`settings > advanced > toggle dev mode`)
+6. create test server and copy ID
+7. create `verify` channel and copy its ID
+8. create `.env` file in project root
 
 > .env
 
@@ -36,6 +34,14 @@ DISCORD_BOT_CLIENT_PUBLIC_KEY=''
 DISCORD_BOT_TOKEN=''
 ```
 
+## run
+
+1. `npm install`
+2. `npm start`
+3. click link in logs to invite to test server
+4. run `/nfd start` and `/nfd verify`
+5. tinker and finalize
+
 ## other
 
-`register-commands.ts` can be run separately (only needs to be run once unless the command defs change). it can be done without libs if you want to put the request body together manually
+`register-commands.ts` can be run separately (only needs to be run once unless the command defs change, think of it like a migration script for the state of the slash command). it can be done without libs if you want to put the request body together manually [docs](https://discord.com/developers/docs/interactions/application-commands#registering-a-command)
