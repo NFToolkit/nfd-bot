@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "eamodio.gitlens",
+    "pmneo.tsimporter",
+    "gruntfuggly.todo-tree",
+    "rvest.vs-code-prettier-eslint"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "nfd-bot-poc",
+  "version": "1.0.0",
+  "description": "minimal PoC for NFD Discord bot",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nftoolkit/nfd-bot.git"
+  },
+  "license": "MIT",
+  "author": "the-vampiire",
+  "keywords": [],
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "node .",
+    "build": "tsc -p tsconfig.json"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.10.0",
+    "@discordjs/rest": "^0.2.0-canary.0",
+    "discord-interactions": "^3.1.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.0.1",
+    "@typescript-eslint/parser": "^5.0.1",
+    "eslint": "^7.3.2",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-newline-destructuring": "^1.0.1",
+    "prettier": "^2.4.1",
+    "prettier-eslint": "^13.0.0",
+    "prettier-eslint-cli": "^5.0.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.4.4"
+  },
+  "bugs": {
+    "url": "https://github.com/nftoolkit/nfd-bot/issues"
+  },
+  "homepage": "https://github.com/nftoolkit/nfd-bot#readme"
+}

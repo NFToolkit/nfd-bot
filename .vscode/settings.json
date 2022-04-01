@@ -1,0 +1,48 @@
+{
+  "editor.formatOnSave": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": false,
+  "todo-tree.tree.showCountsInTree": true,
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "todo-tree.general.debug": true,
+  "todo-tree.general.tags": [
+    "BUG",
+    "NOTE",
+    "TODO",
+    "THINK",
+    "FUTURE",
+    "REMOVE",
+    "DOCUMENT",
+    "WARNING"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "NOTE": {
+      "background": "white",
+      "foreground": "black"
+    },
+    "WARNING": {
+      "background": "red",
+      "foreground": "white"
+    },
+    "REMOVE": {
+      "background": "red",
+      "foreground": "white"
+    },
+    "BUG": {
+      "background": "maroon",
+      "foreground": "white"
+    },
+    "FUTURE": {
+      "background": "aqua",
+      "foreground": "black"
+    },
+    "THINK": {
+      "background": "green",
+      "foreground": "black"
+    },
+    "DOCUMENT": {
+      "background": "green",
+      "foreground": "white"
+    },
+  },
+}
