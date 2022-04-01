@@ -46,7 +46,7 @@ api.post("/interactions", (req, res) => {
     return res.json({
       type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
       data: {
-        ephemeral: true, // marks message as "only you can see"
+        flags: 64, // 1 << 6, "ephemeral", https://discord.com/developers/docs/resources/channel#message-object-message-flags
         content: `this command can only be used in <#${DISCORD_VERIFY_CHANNEL_ID}>`,
       },
     });
@@ -76,7 +76,7 @@ api.post("/interactions", (req, res) => {
   return res.json({
     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
     data: {
-      ephemeral: true,
+      flags: 64,
       content: content.join("\n"),
     },
   });
